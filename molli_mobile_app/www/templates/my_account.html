@@ -1,5 +1,5 @@
-<ion-view view-title="My Account" hide-back-button="true">
-  <ion-content>
+<ion-view view-title="My Account" hide-back-button="true" style="font-family: 'Roboto';">
+  <ion-content style="padding-top:20px;">
       <div class="item item-divider">
         <h1 style="text-align:center;">$$ {{user.username}} $$</h3>
       </div>
@@ -15,4 +15,20 @@
       </a>
     </div>
   </ion-content>
+
+  <!--FOOTER-->
+  <div class = "tabs-striped tabs-background-dark tabs-color-royal">
+   <div class = "tabs">
+    <a class="tab-item" ui-sref="app.popular">
+      <i class="icon ion-ios-flame-outline" ></i>
+    </a>
+    <a class="tab-item icon  tabs-icon-only" ui-sref="app.create_montage">
+      <i class="icon ion-ios-videocam-outline" style="color:white"></i>
+    </a>
+    <a class="tab-item" ui-sref="app.home">
+      <i class="icon ion-ios-clock-outline"></i>
+    </a>
+    </div>
+  </div>
+
 </ion-view>

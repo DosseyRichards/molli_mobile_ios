@@ -1,6 +1,6 @@
 <ion-view view-title="Molli" hide-back-button="true">
 
-  <ion-content>
+  <ion-content style="padding-top:20px;">
     <ion-list>
       <div class="item item-divider" style="text-align:center;">
         My Montages
@@ -34,4 +34,20 @@
     <p ng-show="!noMontages" style="padding:10%;"> Make montages <a ui-sref="app.create_montage">here.</a> </p>
     <p ng-show="videos" style="text-align:center;">You haven't made any montages! Make one here <a ui-sref="app.create_montage">here.</a></p>
   </ion-content>
+
+
+<!--FOOTER-->
+  <div class = "tabs-striped tabs-background-dark tabs-color-royal">
+   <div class = "tabs">
+    <a class="tab-item" ui-sref="app.popular">
+      <i class="icon ion-ios-flame-outline" ></i>
+    </a>
+    <a class="tab-item" ui-sref="app.create_montage">
+      <i class="icon ion-ios-videocam-outline" style="color:white"></i>
+    </a>
+    <a class="tab-item active icon tabs-icon-only" ui-sref="app.home">
+      <i class="icon ion-ios-clock-outline"></i>
+    </a>
+  </div>
+</div>
 </ion-view>

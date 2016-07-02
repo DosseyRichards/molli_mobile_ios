@@ -1,5 +1,5 @@
 <ion-view view-title="Create Montage" class="bar-assertive" cache-view="false">
-  <ion-content>
+  <ion-content style="padding-top:20px;">
   <div class="bar bar-header" ng-show="videosAdded.length>1">
      <div class="row col-offset-25 assertive" style="font-weight:bold;">
             <p class="assertive"><i class="ion-chatbubble-working" style="padding-right:8px;"></i> {{videosAdded.length}} Videos Selected</p>
@@ -49,7 +49,7 @@
 
 
 
-             <a class="button button-block button-positive"  ng-show="videosAdded.length>1" ng-hide="!button_stay_hidden" ng-click="choose_image()">
+             <a class="button button-block button-positive"  ng-show="videosAdded.length>1" ng-show="!button_stay_hidden" ng-click="choose_image()">
                Add A Cover Picture <i class="ion-image" style="padding-left:8px;"></i>
             </a>
             <br/>
@@ -63,4 +63,19 @@
         </div>
     </ion-list>
   </ion-content>
+
+<!--FOOTER-->
+  <div class = "tabs-striped tabs-background-dark tabs-color-royal">
+   <div class = "tabs">
+    <a class="tab-item" ui-sref="app.popular">
+      <i class="icon ion-ios-flame-outline" ></i>
+    </a>
+    <a class="tab-item active icon  tabs-icon-only" ui-sref="app.create_montage">
+      <i class="icon ion-ios-videocam-outline" style="color:white"></i>
+    </a>
+    <a class="tab-item" ui-sref="app.home">
+      <i class="icon ion-ios-clock-outline"></i>
+    </a>
+  </div>
+</div>
 </ion-view>

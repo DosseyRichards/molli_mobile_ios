@@ -1,21 +1,38 @@
 <ion-view  view-title="Login" hide-back-button="true">
-  <ion-content>
-    <ion-list>
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" id="username" ng-model="userInfo.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" id="password" ng-model="userInfo.password">
-        </label>
+  <ion-content style="background-color: #1c1c1c">
+    <div style="text-align: center;padding-top: 25px;"><img src="/img/LOGO@2x.png" alt="logo image"></div>
 
-        <label class="item">
-          <button class="button button-block button-positive"  href="#" ng-click="doLogin()">Log in</button>
-        </label>
-        <br />
+    <ion-list inset>
+        <div class="list list-inset col col-80 col-offset-10">
+          <label class="item item-input">
+            <input type="text" placeholder="Username" id="username" ng-model="userInfo.username">
+          </label>
+          <label class="item item-input">
+            <input type="password" placeholder="Password" id="password" ng-model="userInfo.password">
+          </label>
+        </div>
+
+          <button class="button button-block button-positive col col-33 col-offset-33"  href="#" ng-click="doLogin()">Log In</button>
+          <button class="button button-block button-calm col col-33 col-offset-33"  ui-sref="app.sign_up">Sign Up</button>
     </ion-list>
-
-        <p style="padding-left:8%;font-weight:bold;text-align:center;">No account?<br/><br/><a ui-sref="app.sign_up" class="button button-outline button-positive">sign up here.</a></p>
+    
+      <div style="text-align: center; color:#d11948"
+        <a ui-sref="app.sign_up" style="font-weight:bold;text-align:center;color:#d11948;">Forgot the password?</a>
+      </div>
   </ion-content>
+
+  <!--FOOTER-->
+  <div class = "tabs-striped tabs-background-dark tabs-color-royal">
+   <div class = "tabs">
+    <a class="tab-item" ui-sref="app.popular">
+      <i class="icon ion-ios-flame-outline" ></i>
+    </a>
+    <a class="tab-item icon  tabs-icon-only" ui-sref="app.create_montage">
+      <i class="icon ion-ios-videocam-outline" style="color:white"></i>
+    </a>
+    <a class="tab-item" ui-sref="app.home">
+      <i class="icon ion-ios-clock-outline"></i>
+    </a>
+  </div>
 </ion-view>
+

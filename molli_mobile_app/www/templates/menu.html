@@ -1,21 +1,22 @@
 <ion-side-menus enable-menu-with-back-views="true">
 
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-assertive">
+    <ion-nav-bar class="bar-dark">
       <ion-nav-back-button>
       </ion-nav-back-button>
 
       <ion-nav-buttons side="right">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="right">
+        <button class="button button-icon button-clear ion-ios-person-outline" style ="color:#d11948; margin-top:auto; margin-bottom:auto;" ui-sref="app.my_account">
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
-
-  <ion-side-menu side="right">
-    <ion-header-bar class="bar-assertive">
-      <h1 class="title">Molli </h1>
+</ion-side-menus>
+<!--
+ <ion-side-menu side="right">
+    <ion-header-bar class="bar-dark mynavbar">
+      <h1 class="title" style="font-family: 'Roboto';"> Molli </h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>
@@ -31,4 +32,5 @@
       </ion-list>
     </ion-content>
   </ion-side-menu>
-</ion-side-menus>
+
+  >

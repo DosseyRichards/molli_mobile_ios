@@ -10,35 +10,6 @@
 
 .bar_watch { background-image: none !important; }
 
-.card-background-page {
-
-  ion-card {
-    position: relative;
-    text-align: center;
-  }
-
-  .card-title {
-    position: absolute;
-    top: 36%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
-  }
-
-  .card-subtitle {
-    font-size: 1.0em;
-    position: absolute;
-    top: 52%;
-    width: 100%;
-    color: #fff;
-  }
-
-}
-
-
-
-
 .centerme {
     margin: 0 auto;
 }
@@ -93,3 +64,185 @@
 	color:white;
 
 }
+
+
+.list_card{
+  position:relative;
+  width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+a.container {
+  float: left;
+  position: relative;
+}
+a.container span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../img/play-btn.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 300%;
+}
+@media screen and (max-width: 480px) {
+  a.container span {
+    background-size: 400%;
+  }
+}
+
+/* GRAY TEXT BOX BEHIND TEXT */
+.card-description-box {
+    position: absolute;
+    text-align: left;
+    bottom: 0px;
+    left: 0px;
+    font-size: 18px;
+    width:100%;
+    /* styling */  
+    background-color:black;  
+    font-family: 'Roboto';  
+    font-weight: bold;
+    font-size:18px;  
+    color:#FFF;  
+    opacity:0.7; /* transparency */  
+    filter:alpha(opacity=60); /* IE transparency */  
+  }
+
+/* ACTUAL TEXT */
+.card-description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+/* FOOTER BACKGROUND */
+.tabs-icon-top {
+  background-color: #1c1c1c;
+
+}
+
+/* HEADER BAR: TITLE */
+.bar-bar-dark, .title {
+  color:#d11948 !important;
+}
+
+.bar.bar-dark {
+  height:60px;
+}
+
+.bar .title {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    margin: 0 10px;
+    min-width: 30px;
+    height: 43px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 44px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+/* TAB:STRIPES 
+.tabs-striped.tabs-color-royal .tab-item {
+  color: rgba(209, 25, 72, 0.4);
+  opacity: 1; }
+  .tabs-striped.tabs-color-royal .tab-item .badge {
+    opacity: 0.4; }
+  .tabs-striped.tabs-color-royal .tab-item.tab-item-active, .tabs-striped.tabs-color-royal .tab-item.active, .tabs-striped.tabs-color-royal .tab-item.activated {
+    margin-top: -2px;
+    margin-right: 45px;
+    margin-left: 45px;
+    color: #d11948;
+    border: 0 solid #d11948;
+    border-bottom-width: 5px; }
+    .tabs-striped.tabs-color-royal .tab-item.tab-item-active .badge, .tabs-striped.tabs-color-royal .tab-item.active .badge, .tabs-striped.tabs-color-royal .tab-item.activated .badge {
+      top: 2px;
+      opacity: 1; }
+
+.tabs-striped.tabs-color-royal .tab-item {
+  color: rgba(209, 25, 72, 0.4);
+  opacity: 1; }
+  .tabs-striped.tabs-color-royal .tab-item .badge {
+    opacity: 0.4; }
+  .tabs-striped.tabs-color-royal .tab-item.tab-item, .tabs-striped.tabs-color-royal .tab-item, .tabs-striped.tabs-color-royal .tab-item {
+    margin-top: -2px;
+    margin-right: 45px;
+    margin-left: 45px;
+    color: #d11948;
+    border: 0 solid #d11948;
+    border-bottom-width: 5px; }
+    .tabs-striped.tabs-color-royal .tab-item.tab-item .badge, .tabs-striped.tabs-color-royal .tab-item .badge, .tabs-striped.tabs-color-royal .tab-item .badge {
+      top: 2px;
+      opacity: 1; }
+
+    */
+
+/* LOG IN: BUTTON COLORS */
+  .bar-positive .button:hover {
+    color: #1c1c1c;
+    text-decoration: none; 
+  }
+
+  .bar-calm .button:hover {
+    color: #1c1c1c;
+    text-decoration: none; 
+  }
+
+/* LOG IN: BUTTON ALLIGNMENT*/
+label {
+    display:inline-block;
+    border:1px solid red;
+    width:100%;
+    font-weight:bold;
+}
+
+input{
+    float:right; /* shift to right for alignment*/
+    width:80% 
+}
+
+/* TAB ICONS */
+.ion-ios-flame-outline:before {
+  padding-top: 5px;
+  display: block;
+  content: url('../img/flame.png') !important;
+} 
+
+.ion-ios-videocam-outline:before {
+  padding-top: 5px;
+  display:block;
+  content: url('../img/Camera.png') !important;
+}
+
+.ion-ios-clock-outline:before {
+  padding-top: 5px;
+  display:block;
+  content: url('../img/recent.png') !important;
+}
+
+/* VIDEO LAYOUT 
+.container{
+  width: 500px;
+  height: 500px;
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+*/

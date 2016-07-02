@@ -2,7 +2,7 @@
   <ion-content [padding="true"]>
     <form >
       <div class="list">
-        <label class="item item-input">
+        <label class="item item-input" style="padding-top:20px;">
           <span class="input-label">Username</span>
           <input type="text" id="username" ng-model="userInfo.username">
         </label>
@@ -11,9 +11,12 @@
           <input type="password" id="password" ng-model="userInfo.password">
         </label>
         <label class="item">
-          <button class="button button-block button-positive" ng-click="doSignUp()">Sign up</button>
+          <button class="button button-block button-calm col col-80 col-offset-10" ng-click="doSignUp()">Sign up</button>
         </label>
-        By clicking sign up you are agreeing to our <a ui-sref="app.terms_conditions">Terms and Conditions.</a>
+        <div class ="text" style="text-align: center;"> <br></br>
+          By clicking sign up you are agreeing to our
+          <br> <a ui-sref="app.terms_conditions">Terms and Conditions.</br> 
+        </div>
       </div>
     </form>
   </ion-content>

@@ -1,19 +1,18 @@
-<ion-view view-title="Molli" hide-back-button="true" has-footer="true" overflow-scroll="true">
-  <ion-content>
+<ion-view view-title="Recent" hide-back-button="true" has-footer="true" overflow-scroll="true" style="font-family: 'Roboto';">
+  <ion-content style="background-color: #1c1c1c">
     <ion-list data-tap-disable="true">
-      <div class="item item-divider" style="text-align:center;">
-        Recent Montages     <i class="icon ion-planet"></i>
+              <ion-card class="card-background-page" ng-repeat="montage in montages">
+                <div class="container">  
+                  <a ui-sref="app.watch_montage({montage_id: montage._id})" style="text-decoration:none;">
+                    <div class = "card-description-box" style="line-height:60px; font-family: 'Roboto'" >
+                      <div class = "card-description"> {{montage.title}} </div>
+                    </div>
+                    <video poster="{{trustSrc('http://molli.tv/videos/' + montage.thumbnail_location)}}" class="full-image" style="min-height:33vh; width:100%;height:100%"> </video> 
+                  </a>
+                  </div>
+              </ion-card>
+      
 
-      </div>
-  <a ui-sref="app.watch_montage({montage_id: montage._id})" style="text-decoration:none;"  ng-repeat="montage in montages">      
-      <ion-card>
-           <ion-item style="text-align:center;">
-                <img src="{{trustSrc('http://molli.tv/videos/' + montage.thumbnail_location)}}" class="full-image">
-              <h2 style="top:40%;">{{montage.title}} <i class="ion-play" style="padding-left:8px;"></i></h2>
-          </ion-item>
-      </ion-card>
-  </a>
-      </div>
       <ion-infinite-scroll
         on-infinite="loadMore()"
         distance="1%"
@@ -22,17 +21,19 @@
     </ion-list>
     <h3 ng-show="noMoreVideos" style="text-align:center;">.... </h3>
   </ion-content>
-  <div class="tabs tabs-icon-top">
-  <a class="tab-item" ui-sref="app.popular">
-    <i class="icon ion-flame" ></i>
-    Trending
-  </a>
-  <a class="tab-item active">
-    <i class="icon ion-calendar"></i>
-    Recent
-  </a>
-  <a class="tab-item icon  tabs-icon-only" ui-sref="app.create_montage">
-    <i class="icon ion-ios-plus-outline" style="size:100%;padding-top:8px;"></i>
-  </a>
+
+<!--FOOTER-->
+  <div class = "tabs-striped tabs-background-dark tabs-color-royal">
+   <div class = "tabs">
+    <a class="tab-item" ui-sref="app.popular">
+      <i class="icon ion-ios-flame-outline" ></i>
+    </a>
+    <a class="tab-item" ui-sref="app.create_montage">
+      <i class="icon ion-ios-videocam-outline" style="color:white"></i>
+    </a>
+    <a class="tab-item active icon tabs-icon-only" ui-sref="app.home">
+      <i class="icon ion-ios-clock-outline"></i>
+    </a>
   </div>
+</div>
 </ion-view>
